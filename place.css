@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "WDXL Lubrifont TC", sans-serif;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat:repeat;
+  color: white;
+}
+
+/* LOGO */
+.logo-div {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.logo-div img {
+  height: 200px;
+  width: auto;
+}
+
+/* NAVBAR */
+.nav-div {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 450px;
+  /* background: rgba(255, 255, 255, 0.05); */
+  padding: 10px 20px;
+  /* border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.3); */
+}
+
+.nav-div a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 24px;
+}
+
+.nav-div a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 0%;
+  background-color: #00ffd5;
+  transition: width 0.3s ease;
+}
+
+.nav-div a:hover {
+  color: #00ffd5;
+  text-shadow: 0 0 5px #00ffd5;
+}
+
+.nav-div a:hover::after {
+  width: 100%;
+}
+
+/* PLACES SECTION */
+.places-page {
+  margin: 150px 60px 50px 60px;
+  padding: 20px;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
+.places-page h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #00ffd5;
+  text-shadow: 0 0 6px #00ffd5;
+  margin-bottom: 40px;
+}
+
+.place-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.1);
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.place-card h2 {
+  font-size: 30px;
+  color: #00ffd5;
+  margin-bottom: 10px;
+  text-shadow: 0 0 4px #00ffd5;
+}

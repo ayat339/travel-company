@@ -1,0 +1,20 @@
+.about-page {
+    margin: 150px 80px 50px 80px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    padding: 40px 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.1);
+    text-align: justify;
+}
+
+.about-page h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #00ffd5;
+    text-shadow: 0 0 5px #00ffd5;
+    margin-bottom: 30px;
+}

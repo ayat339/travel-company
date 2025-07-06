@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+}
+
+body {
+    background-image: url(bg.jpg); /* use your actual background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* LOGO */
+.logo-div {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo-div img {
+    height: 200px;
+    width: auto;
+}
+
+/* NAVBAR */
+.nav-div {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    /* background: rgba(255, 255, 255, 0.05); */
+    padding: 10px 20px;
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: 0 0 10px rgba(0, 255, 213, 0.3); */
+}
+
+.nav-div a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 24px;
+}
+
+.nav-div a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 0%;
+    background-color: #00ffd5;
+    transition: width 0.3s ease;
+}
+
+.nav-div a:hover {
+    color: #00ffd5;
+    text-shadow: 0 0 5px #00ffd5;
+}
+
+.nav-div a:hover::after {
+    width: 100%;
+}
+
+/* CONTACT SECTION */
+.about-page {
+    margin: 150px 80px 50px 80px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    padding: 40px 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.1);
+    text-align: justify;
+}
+
+.about-page h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #00ffd5;
+    text-shadow: 0 0 5px #00ffd5;
+    margin-bottom: 30px;
+}
